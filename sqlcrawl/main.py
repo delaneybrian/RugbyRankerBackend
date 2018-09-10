@@ -15,9 +15,9 @@ from sqlcrawl.xmlcrawlers.pro14 import start_crawl as pro14_crawl
 
 def start_all_crawlers():
     start_page = 1
-    current_year = 2018
+    current_year = 2019
     #CHANGE END YEAR TO CRAWL ENTIRE THING
-    endyear = 2017
+    endyear = 2018
     #endyear = 2010
 
     anglowelsh_crawl(current_year, start_page, endyear)

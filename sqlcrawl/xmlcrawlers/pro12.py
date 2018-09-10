@@ -10,7 +10,7 @@ tournament_name = "pro12"
 
 def create_url(start_year, end_year, page):
 
-    url = "http://www.scorespro.com/rugby-union/ajaxdata.php?country=europe&comp=pro12&league=&season=" + str(
+    url = "https://www.scorespro.com/rugby-union/ajaxdata.php?country=world&comp=pro14&league=&season=" + str(
         start_year) + '-' + str(end_year) + "&status=results&page=" + str(page)
 
     return url
@@ -127,6 +127,7 @@ def start_crawl(current_year, start_page, endyear):
         previous_year = current_year - 1
         while start_page < 10:
             url = create_url(previous_year, current_year, start_page)
+            print(url)
             page_source = get_page_source(url)
             soup = BeautifulSoup(page_source, 'html.parser')
             body = soup.find('div', {'class': 'no_data'})
