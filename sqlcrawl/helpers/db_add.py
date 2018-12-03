@@ -62,6 +62,7 @@ def add_match(post):
                               print("Error: Could not Commit Database Changes")
                               return False
                       except Exception as e:
+                          print(e)
                           print("Error: Could Not Execute SQL Insert For Match")
                           return False
                   else:

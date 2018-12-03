@@ -1,6 +1,5 @@
 import datetime
 
-
 #IMPORT CRAWLERS
 from sqlcrawl.xmlcrawlers.top14 import start_crawl as top14_crawl
 from sqlcrawl.xmlcrawlers.superrugby import start_crawl as superrugby_crawl
