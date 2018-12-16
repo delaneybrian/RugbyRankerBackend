@@ -51,49 +51,45 @@ def convert_to_datetime(date):
 
 def extract_data(soup):
     match_sections = soup.findAll('div', {'class': 'compgrp'})
-
-    count = 0
     for match_section in match_sections:
-        match_soup = BeautifulSoup(str(match_sections[count]), 'html.parser')
-        match = match_soup.find('tbody')
-        game_soup = BeautifulSoup(str(match), 'html.parser')
-        date = game_soup.find('span', {'class': 'kick_t_dt'}).text.strip()
+        match_soup = BeautifulSoup(str(match_section), 'html.parser')
+        match_list = match_soup.findAll('tbody')
+        for match in match_list:
+            game_soup = BeautifulSoup(str(match), 'html.parser')
+            date = game_soup.find('span', {'class': 'kick_t_dt'}).text.strip()
+            game = game_soup.findAll('tr')
+            if len(game) == 2:
+                # HOMETEAM
+                hometeam = BeautifulSoup(str(game[0]), "html.parser")
+                # FIND HOMETEAM NAME
+                hometeam_name = (hometeam.find('td', {'class': 'hometeam_rg'})).text.strip()
+                # FIND HOMETEAM SCORE
+                hometeam_score = (hometeam.find('td', {'class': 'ts_setB'})).text.strip()
 
-        game = game_soup.findAll('tr')
-        if len(game) == 2:
-            # HOMETEAM
-            hometeam = BeautifulSoup(str(game[0]), "html.parser")
-            # FIND HOMETEAM NAME
-            hometeam_name = (hometeam.find('td', {'class': 'hometeam_rg'})).text.strip()
-            # FIND HOMETEAM SCORE
-            hometeam_score = (hometeam.find('td', {'class': 'ts_setB'})).text.strip()
+                # AWAYTEAM
+                awayteam = BeautifulSoup(str(game[1]), "html.parser")
+                # FIND AWAYTEAM NAME
+                awayteam_name = (awayteam.find('td', {'class': 'awayteam_rg'})).text.strip()
+                # FIND AWAYTEAM SCORE
+                awayteam_score = (awayteam.find('td', {'class': 'ts_setB'})).text.strip()
 
-            # AWAYTEAM
-            awayteam = BeautifulSoup(str(game[1]), "html.parser")
-            # FIND AWAYTEAM NAME
-            awayteam_name = (awayteam.find('td', {'class': 'awayteam_rg'})).text.strip()
-            # FIND AWAYTEAM SCORE
-            awayteam_score = (awayteam.find('td', {'class': 'ts_setB'})).text.strip()
+                # Find Tournament
+                tournament = tournament_name
 
-            # Find Tournament
-            tournament = tournament_name
+                date = str(date).replace(".", "-")
+                numbers = date.split('-')
+                year = int('20' + str(numbers[2]))
+                dateforid = str(year) + numbers[1] + numbers[0]
 
-            date = str(date).replace(".", "-")
-            numbers = date.split('-')
-            year = int('20' + str(numbers[2]))
-            dateforid = str(year) + numbers[1] + numbers[0]
+                # MatchID
+                match_id = dateforid + hometeam_name.lower().replace(" ", "") + awayteam_name.replace(" ", "").lower()
+                match_id = match_id.replace("'", "")
+                match_id = match_id.replace('"', "")
 
-            # MatchID
-            match_id = dateforid + hometeam_name.lower().replace(" ", "") + awayteam_name.replace(" ", "").lower()
-            match_id = match_id.replace("'", "")
-            match_id = match_id.replace('"', "")
+                datet = datetime.datetime(year, int(numbers[1]), int(numbers[0]))
 
-            datet = datetime.datetime(year, int(numbers[1]), int(numbers[0]))
-
-            format_to_dict(datet, hometeam_name, hometeam_score, awayteam_name, awayteam_score, tournament_name,
-                           match_id)
-
-        count += 1
+                format_to_dict(datet, hometeam_name, hometeam_score, awayteam_name, awayteam_score, tournament_name,
+                               match_id)
 
 
 def format_to_dict(date, hometeam, hometeam_score, awayteam, awayteam_score, torunament, match_id):
