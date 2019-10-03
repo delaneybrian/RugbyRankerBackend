@@ -5,4 +5,3 @@ from Ranking.calculatePositions import CalculatePositions
 start_all_crawlers()
 initate_analysis()
 CalculatePositions()
-

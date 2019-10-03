@@ -106,6 +106,8 @@ team_dict = {
     "Bourg-en-Bresse": 62,
     "Perigueux": 63,
     "USON Nevers" : 100,
+    "Rouen Normandie" : 101,
+    "Valence Romans" : 102,
 
     # Italy League
     """
