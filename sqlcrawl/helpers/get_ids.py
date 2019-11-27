@@ -68,6 +68,7 @@ team_dict = {
     "Biarritz": 33,
     "Perpignan": 34,
     "Bayonne": 35,
+    "Aviron Bayonnais": 35,
     "Toulon": 36,
     "Bordeaux-Begles": 37,
     "Bordeaux": 37,
