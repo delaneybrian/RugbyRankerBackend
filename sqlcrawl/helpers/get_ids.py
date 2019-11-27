@@ -70,6 +70,7 @@ team_dict = {
     "Bayonne": 35,
     "Aviron Bayonnais": 35,
     "Toulon": 36,
+    "RC Toulonnais": 36,
     "Bordeaux-Begles": 37,
     "Bordeaux": 37,
     "Bordeaux Begles": 37,
