@@ -1,7 +1,7 @@
 import datetime
 import time
 from bs4 import BeautifulSoup
-from selenium import webdriver
+import requests
 from sqlcrawl.helpers.db_add import add_match
 from sqlcrawl.helpers.get_ids import check_awayteam_name, check_hometeam_name, check_tournament_id
 
@@ -15,13 +15,16 @@ def create_url(start_year, end_year, page):
 
     return url
 
+
 def get_page_source(url):
-        driver = webdriver.PhantomJS()
-        driver.get(url)
-        time.sleep(1)
-        page_source = driver.page_source
-        driver.close()
-        return page_source
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36'
+    }
+
+    time.sleep(1)
+    response = requests.get(url, headers)
+    full_html = f'<html><body>{response.text}</body></html>'
+    return full_html
 
 def format_month(date_str):
     try:

@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b02b33c-323f-476f-8dc1-5b416bd746f3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Rankings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rankings.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ranking/AddNewToCurrent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ranking/AddNewToCurrent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ranking/MoveCurrentToPrevious.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ranking/MoveCurrentToPrevious.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ranking/play_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ranking/play_match.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ranking/updateMatchRatingValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ranking/updateMatchRatingValues.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlcrawl/helpers/db_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/helpers/db_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RugbyRankerBackend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ghostdriver.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/anglowelsh.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/anglowelsh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/avivapremiership.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/avivapremiership.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/challangecup.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/challangecup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/championscup.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/championscup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/eccellenza.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/eccellenza.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/ghostdriver.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/pro12.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/pro12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/pro14.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/pro14.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/prod2.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/prod2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/superrugby.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/superrugby.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/top14.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlcrawl/xmlcrawlers/top14.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,40 +80,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>rivals</find>
-      <find>time_stamp_ratings_current</find>
-      <find>queen</find>
-      <find>nu</find>
-      <find>initiate</find>
-      <find>updateMatchRatingValues</find>
-      <find>upload_newratings</find>
-      <find>positio</find>
-      <find>now cra</find>
-      <find>suce</find>
-      <find>active</find>
-      <find>number</find>
-      <find>match date</find>
-      <find>check</find>
-      <find>CheckMaxMin</find>
-      <find>p</find>
-      <find>position</find>
-      <find>checkma</find>
-      <find>update</find>
-      <find>where</find>
-      <find>now craw</find>
-      <find>could not m</find>
-      <find>calculateposi</find>
-      <find>d3orpk49e09mue</find>
-      <find>now</find>
-      <find>Southern Kings</find>
-      <find>now c</find>
-      <find>sucess</find>
-      <find>mont</find>
-      <find>suc</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -504,10 +476,42 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1014" y="461" key="EnvironmentVariablesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1585333760087" />
-    <state x="781" y="342" key="SettingsEditor" timestamp="1586950517735">
+    <state width="1896" height="524" key="GridCell.Tab.0.bottom" timestamp="1586976335899">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586950517735" />
+    <state width="1896" height="524" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586976335899" />
+    <state width="1896" height="524" key="GridCell.Tab.0.center" timestamp="1586976335899">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1896" height="524" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586976335899" />
+    <state width="1896" height="524" key="GridCell.Tab.0.left" timestamp="1586976335899">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1896" height="524" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586976335899" />
+    <state width="1896" height="524" key="GridCell.Tab.0.right" timestamp="1586976335899">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1896" height="524" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586976335899" />
+    <state width="1258" height="485" key="GridCell.Tab.1.bottom" timestamp="1586952644770">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="485" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586952644770" />
+    <state width="1258" height="485" key="GridCell.Tab.1.center" timestamp="1586952644770">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="485" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586952644770" />
+    <state width="1258" height="485" key="GridCell.Tab.1.left" timestamp="1586952644770">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="485" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586952644770" />
+    <state width="1258" height="485" key="GridCell.Tab.1.right" timestamp="1586952644770">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="485" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586952644770" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1586951892248">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1586951892248" />
     <state x="981" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1585333638747">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -515,6 +519,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sqlcrawl/xmlcrawlers/anglowelsh.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sqlcrawl/xmlcrawlers/anglowelsh.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
