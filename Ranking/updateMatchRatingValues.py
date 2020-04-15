@@ -1,7 +1,6 @@
 import psycopg2
 from sqlcrawl.helpers.db_add import connect
 
-
 def updateMatchRatingValues(hometeam_rating_before, awayteam_rating_before, hometeam_rating_after, awayteam_rating_after, match_id):
     if hometeam_rating_before and awayteam_rating_before and hometeam_rating_after and awayteam_rating_after and match_id:
         conn = connect()

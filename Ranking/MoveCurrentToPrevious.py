@@ -1,5 +1,4 @@
 from sqlcrawl.helpers.db_add import connect
-import datetime
 
 def MoveCurrentToPrevious():
         conn = connect()

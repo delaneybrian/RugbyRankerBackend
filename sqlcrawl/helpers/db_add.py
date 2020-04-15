@@ -1,7 +1,5 @@
 import psycopg2
 import datetime
-import urllib.parse
-
 
 #LOCAL
 """

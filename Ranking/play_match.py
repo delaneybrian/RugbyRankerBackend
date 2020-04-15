@@ -1,7 +1,5 @@
 #Nessesary Imports
-import psycopg2
 import math
-import datetime
 from sqlcrawl.helpers.db_add import connect
 from Ranking.rivals import calculate_rivals
 from Ranking.date_test import date_checker
@@ -9,7 +7,6 @@ from Ranking.streak import streak
 from Ranking.updateMatchRatingValues import updateMatchRatingValues
 from Ranking.MoveCurrentToPrevious import MoveCurrentToPrevious
 from Ranking.AddNewToCurrent import AddNewToCurrent
-from Ranking.calculatePositions import CalculatePositions
 
 #Define DB Connection Variables
 HOST = 'localhost'

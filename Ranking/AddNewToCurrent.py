@@ -1,6 +1,4 @@
 from sqlcrawl.helpers.db_add import connect
-import datetime
-
 
 #CONSTANT
 MIN_MATCHES = 5
